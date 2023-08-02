@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API de Ciudades</title>
+</head>
+<body>
+    <h1>Lista de Ciudades</h1>
+    <ul>
+        {% for ciudad in ciudades %}
+        <li>{{ ciudad }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Distancia Total: {{ distancia_total }}</h2>
+
+    <h3>Agregar nueva ciudad</h3>
+    <form method="post" action="/">
+        Nombre: <input type="text" name="nombre" required><br>
+        Latitud: <input type="text" name="latitud" required><br>
+        Longitud: <input type="text" name="longitud" required><br>
+        <input type="submit" value="Agregar Ciudad">
+    </form>
+</body>
+</html>
