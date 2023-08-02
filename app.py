@@ -61,7 +61,7 @@ coord = {
     'QRO': (20.59719437542255, -100.38667040246602)
 }
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=[ 'GET' ,'POST'])
 def index():
     if request.method == 'POST':
         nombre_ciudad = request.form['nombre']
